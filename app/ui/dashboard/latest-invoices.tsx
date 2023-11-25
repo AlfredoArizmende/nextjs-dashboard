@@ -35,10 +35,12 @@ export default async function LatestInvoices() {
                     width={32}
                     height={32}
                   />
+
                   <div className="min-w-0">
                     <p className="truncate text-sm font-semibold md:text-base">
                       {invoice.name}
                     </p>
+
                     <p className="hidden text-sm text-gray-500 sm:block">
                       {invoice.email}
                     </p>
@@ -53,8 +55,10 @@ export default async function LatestInvoices() {
             );
           })}
         </div>
+
         <div className="flex items-center pb-2 pt-6">
           <ArrowPathIcon className="h-5 w-5 text-gray-500" />
+
           <h3 className="ml-2 text-sm text-gray-500 ">Updated just now</h3>
         </div>
       </div>
